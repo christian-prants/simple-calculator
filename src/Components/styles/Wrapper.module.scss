@@ -1,0 +1,23 @@
+@import './responsive/mixins.scss';
+
+.wrapper {
+    width: 30rem;
+    height: 45rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgba(247, 230, 194, 0.103);
+    backdrop-filter: blur(2em);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
+
+    @include respond(tab-land) {
+        width: 110%;
+      }
+    
+      @include respond(tab-port) {
+        width: 125%;
+      }
+    
+      @include respond(phone) {
+        width: 120%;
+      }
+} 
